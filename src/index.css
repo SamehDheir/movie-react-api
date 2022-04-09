@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@200;300;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header{
+  
+    background-color: #372b69;
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+
+.search{
+  border: 1px solid #372b69;
+  padding: 0.5rem 1.5rem;
+  background-color: #22254b;
+  font-family: inherit;
+  color: white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.search:focus{
+  outline:1px solid #5e629e;
+}
+
+.movie_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie{
+    background-color: #372b69;
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+
+    width: 230px;
+    border-radius:3px ;
+    -webkit-border-radius:3px ;
+    -moz-border-radius:3px ;
+    -ms-border-radius:3px ;
+    -o-border-radius:3px ;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.movie_info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie img{
+  max-width: 100%;
+}
+
+.movie_over{
+  background-color: white;
+  color: #22254b;
+  max-height: 102%;
+  height: 65%;
+  position: absolute;
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  transform: translateY(102%);
+  -webkit-transform: translateY(102%);
+  -moz-transform: translateY(102%);
+  -ms-transform: translateY(102%);
+  -o-transform: translateY(102%);
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+
+.movie:hover{
+  cursor: pointer;
+  transform: scale(0.98,0.98);
+  -webkit-transform: scale(0.98,0.98);
+  -moz-transform: scale(0.98,0.98);
+  -ms-transform: scale(0.98,0.98);
+  -o-transform: scale(0.98,0.98);
+}
+
+.movie:hover .movie_over{
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.tag{
+  background-color: #22254b;
+  padding: 0.5rem;
+  font-size: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tag.green{
+  color: green;
+}
+
+.tag.orange{
+  color: orange;
+}
+
+.tag.red{
+  color: red;
+}
